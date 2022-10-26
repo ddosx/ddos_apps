@@ -1,0 +1,16 @@
+pkgname="plymouth-theme-ddos"
+pkgver="1"
+pkgrel="1"
+pkgdesc="ddosX plymouth theme"
+arch=('any')
+url="https://github.com/ddosx/ddos"
+license=('GPL')
+depends=('plymouth')
+source=("ddos.tar.gz")
+md5sums=('SKIP')
+groups=('ddos')
+package() {
+    cd $srcdir && tar xfvz ddos.tar.gz
+    mkdir -p ${pkgdir}/usr/share/plymouth/themes/
+    cp -r ${srcdir}/ddos ${pkgdir}/usr/share/plymouth/themes/
+}
