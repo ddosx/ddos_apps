@@ -1,7 +1,7 @@
 [Plymouth Theme]
 Name=ddos
-Description=display ddos logo
-Comment=created By @ddosc team
+Description=ddos plymouth theme
+Comment=Created by @ddosx team
 ModuleName=script
 
 [script]

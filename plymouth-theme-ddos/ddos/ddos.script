@@ -1,3 +1,8 @@
+## Author : Aditya Shakya (adi1090x)
+## Mail : adi1090x@gmail.com
+## Github : @adi1090x
+## Reddit : @adi1090x
+
 // Screen size
 screen.w = Window.GetWidth();
 screen.h = Window.GetHeight();
@@ -23,7 +28,7 @@ state.time = 0.0;
 //--------------------------------- Refresh (Logo animation) --------------------------
 
 # cycle through all images
-for (i = 0; i < 24; i++)
+for (i = 0; i < NUM; i++)
   flyingman_image[i] = Image("progress-" + i + ".png");
 flyingman_sprite = Sprite();
 
@@ -35,7 +40,7 @@ progress = 0;
 
 fun refresh_callback ()
   {
-    flyingman_sprite.SetImage(flyingman_image[Math.Int(progress / 3) % 24]);
+    flyingman_sprite.SetImage(flyingman_image[Math.Int(progress / SPEED) % NUM]);
     progress++;
   }
 

@@ -1,5 +1,5 @@
 pkgname="plymouth-theme-ddos"
-pkgver="1"
+pkgver="1.1"
 pkgrel="1"
 pkgdesc="ddosX plymouth theme"
 arch=('any')
